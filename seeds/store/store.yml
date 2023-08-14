@@ -1,0 +1,16 @@
+version: 2 
+
+seeds: 
+  - name: store
+    config: 
+      schema: store
+      column_types: 
+        id: integer
+        name: string
+        address: string
+        city: string
+        country: string
+        created_at: string
+        typology: string
+        customer_id: integer
+        

@@ -1,0 +1,12 @@
+version: 2 
+
+seeds: 
+  - name: device
+    config: 
+      schema: device
+      column_types: 
+        id: integer
+        type: integer
+        store_id: integer
+        
+        

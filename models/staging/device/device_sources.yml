@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: device
+    database: sumup-dwh
+    schema: dim_model_device
+    tables:
+      - name: device
+

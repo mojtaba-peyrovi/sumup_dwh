@@ -1,0 +1,18 @@
+version: 2 
+
+seeds: 
+  - name: transaction
+    config: 
+      schema: transaction
+      column_types: 
+        id: integer
+        device_id: integer
+        product_name: string
+        product_sku: string
+        category: string
+        amount: integer
+        status: string
+        card_number: string
+        cvv: string
+        created_at: string
+        happened_at: string
