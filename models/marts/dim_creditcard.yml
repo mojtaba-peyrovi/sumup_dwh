@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_creditcard
+    columns:
+      - name: card_key
+        description: The surrogate key of the credit card dimension table
+        tests:
+          - not_null
+          - unique
+      
+      - name: card_number
+        description: The credit card number which was used by a customer in various transactions 
+        tests:
+          - not_null
+          - unique
+
+
+      - name: cvv
+        description: cvv code related to the credit card
+        tests:
+          - not_null
+
+
