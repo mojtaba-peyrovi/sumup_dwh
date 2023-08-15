@@ -8,9 +8,9 @@ with stg_creditcard as (
 
 mark_duplicates as (
     select *, 
-    coalesce(
+    
     lag(card_number) over(partition by card_number order by happened_at)
-    ) as previous_cardnumber
+    as previous_cardnumber
 
 
     from stg_creditcard

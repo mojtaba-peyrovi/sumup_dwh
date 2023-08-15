@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: dim_store
+    columns:
+      - name: store_key
+        description: The surrogate key of the store dimension table
+        tests:
+          - not_null
+          - unique
+      
+      - name: store_id
+        description: store identifier 
+        tests:
+          - not_null
+          - unique
+
+
+      - name: store_name
+        description: The name of the store
+        tests:
+          - not_null
+
+      - name: store_address
+        description: Physical address of the store
+      
+      - name: store_city
+        description: The city where the store is located
+
+      - name: store_country
+        description: The country where the store is located
+
+      - name: created_at
+      
+      - name: store_typology
+        description: The store's typology
+
+      - name: customer_id
+        description: the foreign key to the dum customer table
+       
+
+
+        
+
+

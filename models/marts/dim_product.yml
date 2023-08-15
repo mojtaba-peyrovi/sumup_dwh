@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_product
+    columns:
+      - name: product_key
+        description: The surrogate key of the product dimension table
+        tests:
+          - not_null
+          - unique
+      
+      - name: product_name
+        description: The name of the product 
+        tests:
+          - not_null
+          - unique
+
+
+      - name: product_sku
+        description: The product's stock keeping unit
+        tests:
+          - not_null
+
+      - name: product_category_name
+        description: Product category name
+        tests:
+          - not_null
+        
+
+
