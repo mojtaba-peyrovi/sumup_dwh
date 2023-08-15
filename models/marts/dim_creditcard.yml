@@ -20,5 +20,6 @@ models:
         description: cvv code related to the credit card
         tests:
           - not_null
+          - unique
 
 
