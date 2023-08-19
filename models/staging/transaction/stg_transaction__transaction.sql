@@ -7,7 +7,7 @@ with source as (
         category_name as product_category_name, 
         amount, 
         status, 
-        card_number, 
+        REPLACE(card_number, ' ', '')card_number_2, 
         cvv,
         format_date("%Y-%m-%d %H:%M:%S", PARSE_TIMESTAMP('%m/%d/%Y %H:%M:%S', created_at)) as created_at,
         format_date("%Y-%m-%d %H:%M:%S", PARSE_TIMESTAMP('%m/%d/%Y %H:%M:%S', happened_at)) as happened_at
