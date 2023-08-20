@@ -6,5 +6,6 @@ sources:
     schema: dim_model_transaction
     tables:
       - name: transaction
+    
    
 
